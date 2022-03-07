@@ -151,7 +151,8 @@ body{
 .search-button__wrappper{
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;  
+    
 }
 
 .search-button{
@@ -161,6 +162,7 @@ body{
     border-radius: 5px;
     background-color: #fff;
     color: #535353;
+    cursor: pointer;  
 }
 
 .language-toggler__wrapper{
