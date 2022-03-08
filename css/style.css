@@ -1,7 +1,10 @@
     /* Table of contents */
    
-/* Fonts */
-/* Core styles */
+/* 1. Fonts */
+/* 2. Core styles */
+/* 3. Header section */
+/* 4. Navigation */
+/* 5. Top banner */
 
 
 /* Project fonts */
@@ -113,6 +116,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .logo{
@@ -238,7 +242,52 @@ body{
     text-decoration: none;
 }
 
+/* Site navigation section styles */
+.site-nav{
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.20);
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
 
+.site-nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 17px 12px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.site-nav__item:not(:last-child){
+    /* margin-right: 28px; */
+    margin: 5px 12px;
+}
+
+.site-nav__link{
+    text-decoration: none;
+    font-family: Rubik;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    color: #515151;
+    transition: color 0.3s ease;
+}
+
+.site-nav__link:hover{
+    color: #295091;
+}
+
+/* Top banner section styles */
+.top-banner{
+    margin-bottom: 45px;
+}
+
+.top-banner__link{
+    display: flex;
+}
 
     
     
