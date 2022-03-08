@@ -89,6 +89,11 @@ body{
     height: 100%;
 }
 
+*:focus{
+    outline: none;
+    box-shadow: 0 0 0 1.5px rgba(41, 89, 147, 0.4); 
+}
+
 .container{
     max-width: 1240px;
     padding: 0 20px;
@@ -121,6 +126,15 @@ body{
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+    transition: transform 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.015);
+}
+
+.logo:focus{
+    box-shadow: 0 0 0 1.5px rgba(41, 89, 147, 0.4);
 }
 
 .exchange-rates{
@@ -152,7 +166,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;  
-    
 }
 
 .search-button{
@@ -162,7 +175,13 @@ body{
     border-radius: 5px;
     background-color: #fff;
     color: #535353;
-    cursor: pointer;  
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+.telegram-sub:hover,
+.language-toggler:hover,
+.search-button:hover{
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .language-toggler__wrapper{
@@ -176,6 +195,7 @@ body{
     border: none;
     border-radius: 5px;
     background-color: #fff;
+    transition: box-shadow 0.3s ease;
 }
 
 .language-toggler__img{
@@ -201,6 +221,7 @@ body{
     border-radius: 5px;
     padding: 10px 12px 8px 10px;
     text-decoration: none;
+    transition: box-shadow 0.3s ease;
 }
 
 .telegram-sub:hover{
