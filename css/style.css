@@ -418,7 +418,7 @@ img{
         right: 0;
         bottom: 0;
         z-index: 15;
-        width: 50%;
+        width: 60%;
         border-radius: 0;
         margin-bottom: 0;
         transition: transform .4s ease;
@@ -494,6 +494,10 @@ img{
 
     .logo{
         font-size: 25px;
+    }
+
+    .site-nav{
+        width: 80%;
     }
 }
 
