@@ -5,6 +5,10 @@
 /* 3. Header section */
 /* 4. Navigation */
 /* 5. Top banner */
+/* Footer section */
+
+/* Media queries */
+/* Key Frames */
 
 
 /* Project fonts */
@@ -72,7 +76,7 @@
     src: url("../webfonts/roboto-v29-latin-500italic.woff2") format("woff2"), 
         url("../webfonts/roboto-v29-latin-500italic.woff") format("woff"); 
 }
-    
+/*---------------------------------------------*/
 /* Core styles */    
 html{
     height: 100%;
@@ -108,7 +112,7 @@ img{
     padding: 0 20px;
     margin: 0 auto;
 }
-
+/*---------------------------------------------*/
 /* Site Header section styles */
 
 .site-header{
@@ -247,6 +251,8 @@ img{
     font-size: 16px;
     text-decoration: none;
 }
+
+/*---------------------------------------------*/
  /* Burger menu styles */
 .menu-btn{
     position: relative; 
@@ -275,10 +281,11 @@ img{
     height: 5px;
     background: #295091;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    box-shadow: 0 2px 5px rgba(0, 29, 110, 0.2);
     transition: all .5s ease-in-out;
 }
 
+/*---------------------------------------------*/
 /* Burger animation styles */
 .menu-btn__burger::before{
     transform: translateY(-16px);
@@ -289,19 +296,19 @@ img{
 }
 
 .menu-btn.open .menu-btn__burger{
-    transform: translateX(-50px);
     background: transparent;
     box-shadow: none;
 }
 
 .menu-btn.open .menu-btn__burger::before{
-    transform: rotate(-45deg) translate(35px, 35px);
+    transform: rotate(45deg);
 }
 
 .menu-btn.open .menu-btn__burger::after{
-    transform: rotate(-45deg) translate(35px, 35px);
+    transform: rotate(-45deg);
 }
 
+/*---------------------------------------------*/
 /* Site navigation section styles */
 .site-nav{
     background-color: #fff;
@@ -339,6 +346,7 @@ img{
     color: #295091;
 }
 
+/*---------------------------------------------*/
 /* Top banner section styles */
 .top-banner{
     margin-bottom: 45px;
@@ -348,8 +356,147 @@ img{
     display: flex;
 }
 
+/*-------------------------------------------------*/
+/* Footer section styles */
+.site-footer{
+    background-color: #295093;
+    padding: 18px 0;
+    color: #fff;
+}
 
+.site-footer *:focus{
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5); 
+}
 
+.site-footer__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 17px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.site-footer__logo{
+    margin-right: auto 0;
+    padding: 10px 11px;
+    background-color: #133C82;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    color: #fff;    
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+}
+
+.site-footer__top-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-footer__sub-text{
+    margin: 0;
+    margin-right: 17px;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.site-footer__sub-text1{
+    display: none;
+    margin: 0;
+    margin-right: 17px;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.telegram-footer{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.telegram-footer:hover{
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.telegram-footer__img{
+    margin-right: 7px;
+}
+
+.telegram-footer__text{
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #295093;
+}
+
+.site-footer__divider{
+    height: 3px;
+    border: none;
+    margin-bottom: 12px;
+    background-color: #133C82;
+}
+
+.site-footer__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-footer__heading{
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 0;
+}
+
+.site-footer__about{
+    max-width: 365px;
+    margin-right: 110px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.site-footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 520px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.site-footer__nav-item{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.site-footer__nav-link{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.site-footer__nav-link:hover{
+    text-decoration: underline;
+}
+
+/*---------------------------------------------*/
 /* Media queries */
 @media(max-width: 991px){
     .site-header{
@@ -365,6 +512,27 @@ img{
         order: -1;
         justify-content: center;
     }
+
+    /* Footer section */
+    .site-footer__sub-text{
+        max-width: 440px;
+    }
+}
+
+@media (max-width:850px){
+    /* footer section */
+    .site-footer__bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-footer__about{
+        max-width: 800px;
+        text-align: center;
+        margin-right: 0;
+    }
+
 }
 
 @media(max-width: 778px){
@@ -479,11 +647,43 @@ img{
     .top-banner{
         display: none;
     }
+
+    /* Footer section */
+    .site-footer__sub-text{
+        display: none;
+    }
+    
+    .site-footer__sub-text1{
+        display: block;
+    }
+
+    .site-footer__about{
+        order: 1;
+    }
 }
 
 @media(max-width: 650px) {
     .telegram-sub{
         display: none;
+    }
+
+    /* footer section */
+    .site-footer__nav-item{
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    /* footer-section */
+    .site-footer__nav{
+        margin-bottom: 10px;
+    }
+    .site-footer__nav-item{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .site-footer__nav-link{
+        line-height: 5px;
     }
 }
 
@@ -499,8 +699,19 @@ img{
     .site-nav{
         width: 80%;
     }
+
+     /* Footer section */
+    .site-footer__sub-text1{
+        display: none;
+    }
+
+    .site-footer__nav{
+        display: flex;
+       
+    }
 }
 
+/*---------------------------------------------*/
 /* Keyframes */
 @keyframes site-nav-slide-in {
     from{
