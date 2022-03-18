@@ -5,6 +5,10 @@
 /* 3. Header section */
 /* 4. Navigation */
 /* 5. Top banner */
+/* 6. Main Content */
+
+
+
 /* Footer section */
 
 /* Media queries */
@@ -89,6 +93,8 @@ html{
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     font-family: "Rubik", "Arial", sans-serif;
     font-size: 15px;
     line-height: 18px;
@@ -355,6 +361,18 @@ img{
 .top-banner__link{
     display: flex;
 }
+
+/*---------------------------------------------*/
+/* Main content section styles */
+.main-content{
+    flex-grow: 1;
+    padding-top: 22px;
+    padding-bottom: 38px;
+}
+
+
+
+
 
 /*-------------------------------------------------*/
 /* Footer section styles */
