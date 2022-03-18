@@ -362,7 +362,7 @@ img{
     display: flex;
 }
 
-/*---------------------------------------------*/
+/*-----------------------------------------------------*/
 /* Main content section styles */
 .main-content{
     flex-grow: 1;
@@ -370,6 +370,107 @@ img{
     padding-bottom: 38px;
 }
 
+/* Covid info section styles */
+.covid-info{
+    display: flex;
+    align-items: center;
+    padding: 30px 35px;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    color: #000;
+}
+
+.covid-info::before{
+    content: "";
+    margin-right: 25px;
+    width: 43px;
+    height: 45px;
+    background-image: url("../img/icon-covid.svg") no-repeat center center / contain;
+}
+
+.covid-info__heading{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 70px;
+    width: 235px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 235px;
+}
+
+.covid-info__stats-list{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.covid-info__stat{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 29px;
+    padding-right: 29px;
+    border-left: 2px solid #EB5569;
+    cursor: pointer;
+}
+
+.covid-info__stat::before{
+    content: "";
+    width: 38px;
+    height: 40px;
+    margin-right: 18px;
+}
+
+.covid-info__stat--infected{
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.covid-info__stat--recovered:active,
+.covid-info__stat--deaths:active{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    color: red;
+}
+
+.covid-info__stat--infected::before{
+    background: url("../img/icon-infected.svg") no-repeat center center / contain;
+}
+.covid-info__stat--recovered::before{
+    background: url("../img/icon-recovered.svg") no-repeat center center / contain;
+}
+.covid-info__stat--deaths::before{
+    background: url("../img/icon-deaths.svg") no-repeat center center / contain;
+}
+
+.covid-info__stat-title{
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.red{
+    color: #db0000;
+}
+.green{
+    color: #05b135;
+}
+.dark{
+    color: #000;
+}
+
+.covid-info__stat-value{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
 
 
 
