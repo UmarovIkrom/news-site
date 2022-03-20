@@ -375,6 +375,7 @@ img{
     display: flex;
     align-items: center;
     padding: 30px 35px;
+    margin-bottom: 18px;
     border-radius: 5px;
     background-color: #f6f6f6;
     color: #000;
@@ -383,8 +384,8 @@ img{
 .covid-info::before{
     content: "";
     margin-right: 25px;
-    width: 53px;
-    height: 65px;
+    width: 40px;
+    height: 40px;
     background: url("../img/icon-covid.png") no-repeat center center / contain;
 }
 
@@ -431,12 +432,6 @@ img{
     padding-top: 17px;
     padding-bottom: 17px;
 }
-.covid-info__stat--recovered:active,
-.covid-info__stat--deaths:active{
-    padding-top: 17px;
-    padding-bottom: 17px;
-    color: red;
-}
 
 .covid-info__stat--infected::before{
     background: url("../img/icon-infected.svg") no-repeat center center / contain;
@@ -471,6 +466,8 @@ img{
     font-size: 25px;
     line-height: 30px;
 }
+
+
 
 
 
@@ -617,7 +614,26 @@ img{
 
 /*---------------------------------------------*/
 /* Media queries */
+@media(max-width:1150px){
+    /* Covid info section styles */
+    .covid-info__heading{
+        margin-right: 20px;
+    }
+
+    .covid-info__stat{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .covid-info__stat--infected{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+}
+
 @media(max-width: 991px){
+    /* header section styles */
     .site-header{
         padding-top: 20px;
     }
@@ -629,6 +645,33 @@ img{
     .exchange-rates{
         width: 100%;
         order: -1;
+        justify-content: center;
+    }
+
+    /* Covid info section styles */
+    .covid-info{
+        flex-wrap: wrap;
+    }
+
+    .covid-info::before{
+        display: none;
+    }
+
+    .covid-info__heading{
+        width: auto;
+        margin-right: 0;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .covid-info__stats-list{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .covid-info__stat--infected{
+        border-left: none;
+        display: flex;
         justify-content: center;
     }
 
@@ -651,7 +694,6 @@ img{
         text-align: center;
         margin-right: 0;
     }
-
 }
 
 @media(max-width: 778px){
@@ -786,23 +828,31 @@ img{
         display: none;
     }
 
+    /* covid info section styles */
+    .covid-info{
+        padding: 15px;
+    }
+
+    .covid-info__stats-list{
+        flex-direction: column;
+    }
+
+    .covid-info__stat{
+        border-left: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .covid-info__stat:not(:last-child){
+        border-bottom: 2px solid #f4ccd1;
+    }
+
     /* footer section */
     .site-footer__nav-item{
         text-align: center;
-    }
-}
-
-@media (max-width:500px) {
-    /* footer-section */
-    .site-footer__nav{
-        margin-bottom: 10px;
-    }
-    .site-footer__nav-item{
-        width: 100%;
-        margin-bottom: 5px;
-    }
-    .site-footer__nav-link{
-        line-height: 5px;
     }
 }
 
@@ -819,6 +869,10 @@ img{
         width: 80%;
     }
 
+    /* covid info section styles */
+    .covid-info__heading{
+        text-align: center;
+    }
      /* Footer section */
     .site-footer__sub-text1{
         display: none;
@@ -826,7 +880,15 @@ img{
 
     .site-footer__nav{
         display: flex;
-       
+        margin-bottom: 10px;
+    }
+
+    .site-footer__nav-item{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .site-footer__nav-link{
+        line-height: 5px;
     }
 }
 
