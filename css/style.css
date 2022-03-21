@@ -369,8 +369,8 @@ img{
 /* Main content section styles */
 .main-content{
     flex-grow: 1;
-    padding-top: 22px;
-    padding-bottom: 38px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /* Covid info section styles */
@@ -378,7 +378,7 @@ img{
     display: flex;
     align-items: center;
     padding: 30px 35px;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
     border-radius: 5px;
     background-color: #f6f6f6;
     color: #000;
@@ -473,7 +473,7 @@ img{
 /*-------------------------------------------------*/
 /* News grid section styles */
 .news-grid{
-    margin-bottom: 16px;
+    margin-bottom: 25px;
 }
 
 .news-grid__list{
@@ -516,6 +516,7 @@ img{
 }
 
 .news-grid__link{
+    display: inline-block;
     text-decoration: none;
     color: #202020;
     transition: color 0.2s ease;
@@ -531,8 +532,53 @@ img{
 }
 
 /*-------------------------------------------------*/
-/*  section styles */
+/*  Notifications section styles */
+.notifications{
+    display: flex;
+    align-items: center;
+    padding: 25px 35px;
+    border-radius: 5px;
+    background-color: rgba(239, 186, 84, 0.18);
+}
 
+.notifications::before{
+    content: "";
+    width: 31px;
+    height: 35px;
+    background: url("../img/bell-icon.svg") no-repeat center center / contain;
+}
+
+.notifications-heading{
+    margin: 0;
+    margin-right: auto;
+    margin-left: 17px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+}
+
+.notifications-button{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+    white-space: nowrap;
+    background-image: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+    cursor: pointer;
+}
+
+.notifications-button:hover{
+    background-image: linear-gradient(90deg, rgba(255, 139, 54, 0.9) 0%,  #FE5C28 88.43%);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notifications-button:focus{
+    box-shadow: 0 0 0 4px rgba(255, 139, 54, 0.5);
+}
 
 
 
@@ -747,6 +793,13 @@ img{
 }
 
 @media (max-width:850px){
+    /* notifications section  */
+    .notifications-heading,
+    .notifications-button{
+        font-size: 17px;
+        line-height: 20px;
+    }
+
     /* footer section */
     .site-footer__bottom{
         display: flex;
@@ -765,7 +818,7 @@ img{
     .page-body{
         margin-top: 82px;
     }
-
+    /* header section */
     .site-header{
         position: fixed;
         width: 100%;
@@ -804,7 +857,7 @@ img{
         display: block;
         z-index: 20;
     }
-
+    /* navigation section */
     .site-nav{
         display: block;
         position: fixed;
@@ -874,6 +927,21 @@ img{
         display: none;
     }
 
+    /* notifications section */
+    .notifications{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .notifications::before{
+        margin-bottom: 8px;
+    }
+
+    .notifications-heading{
+        margin: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
     /* Footer section */
     .site-footer__sub-text{
         display: none;
@@ -885,6 +953,10 @@ img{
 
     .site-footer__about{
         order: 1;
+    }
+
+    .site-footer__nav-item{
+        text-align: center;
     }
 }
 
@@ -938,6 +1010,14 @@ img{
     .covid-info__heading{
         text-align: center;
     }
+
+    /* notification section */
+    .notifications-heading,
+    .notifications-button{
+        font-size: 15px;
+        line-height: 18px;
+    }
+
      /* Footer section */
     .site-footer__sub-text1{
         display: none;
