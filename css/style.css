@@ -6,6 +6,8 @@
 /* 4. Navigation */
 /* 5. Top banner */
 /* 6. Main Content */
+/* 7. Covid info */
+/* 8. News Grid */
 
 
 
@@ -118,6 +120,7 @@ img{
     padding: 0 20px;
     margin: 0 auto;
 }
+
 /*---------------------------------------------*/
 /* Site Header section styles */
 
@@ -467,6 +470,68 @@ img{
     line-height: 30px;
 }
 
+/*-------------------------------------------------*/
+/* News grid section styles */
+.news-grid{
+    margin-bottom: 16px;
+}
+
+.news-grid__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: -21px;
+    list-style-type: none;
+}
+
+.news-grid__item{
+    position: relative;
+    flex-grow: 1;
+    width: 386px;
+    margin-bottom: 18px;
+    margin-left: 21px;
+}
+
+.news-grid__item:hover .news-grid__link{
+    color: #295091;
+}
+
+.news-grid__image{
+    width: 100%;
+    height: 190px;
+    margin-bottom: 11px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.news-grid__heading{
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    width: auto;
+}
+
+.news-grid__link{
+    text-decoration: none;
+    color: #202020;
+    transition: color 0.2s ease;
+}
+
+.news-grid__link::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*-------------------------------------------------*/
+/*  section styles */
 
 
 
