@@ -8,6 +8,9 @@
 /* 6. Main Content */
 /* 7. Covid info */
 /* 8. News Grid */
+/* 9. latest & Popular */
+/* 10. Latest */
+/* 11. Popular */
 
 
 
@@ -595,7 +598,7 @@ img{
 }
 
 /*-------------------------------------------------*/
-/* Latest news */
+/* Latest news section styles */
 .news-list__heading{
     margin-top: 0;
     margin-bottom: 13px;
@@ -685,13 +688,12 @@ img{
     color: #7688A4;
     margin-left: 4px;
 }
-
 /* More button */
 .news-list__more-wrapper{
     text-align: center;
 }
 
-.news-list__more-button{
+.button{
     border-radius: 5px;
     font-size: 17px;
     font-weight: 500;
@@ -704,10 +706,14 @@ img{
     transition: all 0.3s ease;
 }
 
-.news-list__more-button:hover{
+.button:hover{
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     background-color: rgba(41, 80, 147, 0.9);
 }
+
+/*-------------------------------------------------*/
+/* Popular news section styles*/
+
 
 
 
