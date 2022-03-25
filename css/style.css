@@ -561,6 +561,7 @@ img{
 
 .news-grid__link::before{
     position: absolute;
+    z-index: 1;
     content: "";
     top: 0;
     right: 0;
@@ -624,6 +625,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 
@@ -682,7 +684,6 @@ img{
 .news-list__item:hover .news-list__img-wrapper::before{
     opacity: 1;
 }
-
 
 .news-list__item:hover .news-list__image{
     transform: scale(1.05);
@@ -778,12 +779,72 @@ img{
 
 /*-------------------------------------------------*/
 /* Popular news section styles*/
+.popular-news__banner{
+    width: 386px;
+}
 
+.popular-news{
+    padding: 17px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f6f6f9;
+}   
 
+.popular-news__heading{
+    margin-top: 0;
+    margin-bottom: 6;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #202020;
+}
 
+.popular-news__list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 
+.popular-news__item:not(:last-child){
+    padding-bottom: 14px;
+    border-bottom: 4px solid #e4e4e4;
+    margin-bottom: 18px;
+}
 
+.popular-news__title{
+    margin-bottom: 11px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+}
 
+.popular-news__link{
+    display: inline-block;
+    text-decoration: none;
+    color: #202020;
+}
+
+.popular-news__link:hover{
+    color: #295093;
+}
+
+.popular-news__date{
+    color: #7688A4;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+/* sidebar banner */
+ .sidebar-banner__link{
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sidebar-banner__img{
+    display: block;
+}
 
 
 
