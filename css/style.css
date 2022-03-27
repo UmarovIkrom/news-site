@@ -994,7 +994,43 @@ img{
 
 /*---------------------------------------------*/
 /* Media queries */
-@media(max-width:1150px){
+@media(max-width: 1240px){
+    /* latest popular news section styles */
+    .news-list{
+        width: calc(794 / 1240 * 100%);
+    }
+
+    .news-list__item{
+        align-items: stretch;
+    }
+
+    .news-list__img-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: calc(252 / 794 * 100%);
+        margin-right: auto;
+    }
+    
+    .news-list__img{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .news-list__body{
+        width: calc(522 / 794 * 100%);
+    }
+
+    .popular-news__banner{
+        width: calc(386 / 1240 * 100%);
+    }
+
+    .popular-news__title{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1150px){
     /* Covid info section styles */
     .covid-info__heading{
         margin-right: 20px;
@@ -1055,13 +1091,30 @@ img{
         justify-content: center;
     }
 
+    /* latest and popular news section styles */
+    .news-list,
+    .popular-news__banner{
+        width: 100%;
+    }
+
+    .popular-news{
+        text-align: center;
+    }
+    .news-list__more-wrapper{
+        margin-bottom: 15px;
+    }
+
+    .sidebar-banner{
+        display: none;
+    }
+
     /* Footer section */
     .site-footer__sub-text{
         max-width: 440px;
     }
 }
 
-@media (max-width:850px){
+@media(max-width:850px){
     /* notifications section  */
     .notifications-heading,
     .notifications-button{
@@ -1256,6 +1309,24 @@ img{
         border-bottom: 2px solid #f4ccd1;
     }
 
+    /* latest popular news section styles */
+    .news-list__img-wrapper,
+    .news-list__body{
+        width: 100%;
+    }
+    .news-list__img-wrapper{
+        margin-bottom: 10px;
+    }
+
+    .news-list__item:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    .news-list__text{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
     /* footer section */
     .site-footer__nav-item{
         text-align: center;
@@ -1285,6 +1356,15 @@ img{
     .notifications-button{
         font-size: 15px;
         line-height: 18px;
+    }
+
+    /* latest popular news section styles */
+    .sidebar-banner{
+        display: block;
+    }
+
+    .sidebar-banner__img{
+        width: 100%;
     }
 
      /* Footer section */
