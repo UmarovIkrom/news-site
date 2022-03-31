@@ -354,7 +354,8 @@ img{
     transition: color 0.3s ease;
 }
 
-.site-nav__link:hover{
+.site-nav__link:hover,
+.site-nav__item--active .site-nav__link{
     color: #295091;
 }
 
@@ -477,6 +478,16 @@ img{
 /* News grid section styles */
 .news-grid{
     margin-bottom: 25px;
+}
+
+.news-grid__title{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 15px;
 }
 
 .news-grid__list{
@@ -1031,6 +1042,75 @@ img{
 }
 
 /*---------------------------------------------*/
+/* Article section styles */
+.article{
+    width: calc(794 / 1240 * 100%);
+    border-bottom: 2px solid #ebebeb;
+}
+
+.article-title{
+    margin-bottom: 13px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000;
+}
+
+.article-date__wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.article__date{
+    margin-left: 5px;
+    display: block;
+    color: #6b6d97;
+}
+
+.article-img{
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+.article-body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin-bottom: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000;
+}
+
+.article-body p:first-child{
+    margin-top: 0;
+}
+
+.article-tags{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.article-tags__item:not(:last-child){
+    margin-right: 20px;
+}
+
+.article-tags__item-link{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #28508E;
+    text-decoration: none;
+}
+
+
+
+
+/*---------------------------------------------*/
 /* Media queries */
 @media(max-width: 1240px){
     /* latest popular news section styles */
@@ -1165,6 +1245,12 @@ img{
     /* Footer section */
     .site-footer__sub-text{
         max-width: 440px;
+    }
+
+    /* Article html styles */
+    .article{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 
@@ -1468,6 +1554,29 @@ img{
     }
     .site-footer__nav-link{
         line-height: 5px;
+    }
+    /* Article html styles */
+        
+    .article-title{
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        color: #000;
+    }
+
+    .article-img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .article-body{
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        margin-bottom: 0px;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 21px;
+        color: #000;
     }
 }
 
