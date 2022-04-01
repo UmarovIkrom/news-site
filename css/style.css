@@ -11,10 +11,10 @@
 /* 9. latest & Popular */
 /* 10. Latest */
 /* 11. Popular */
-
-
-
-/* Footer section */
+/* 12. Footer section */
+/* 13. List html */
+/* 14. Article html */
+/* 15. Contact html */
 
 /* Media queries */
 /* Key Frames */
@@ -783,6 +783,11 @@ img{
     transition: all 0.3s ease;
 }
 
+.button--block{
+    display: block;
+    width: 100%;
+}
+
 .button:hover{
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     background-color: rgba(41, 80, 147, 0.9);
@@ -1107,7 +1112,89 @@ img{
     text-decoration: none;
 }
 
+/*---------------------------------------------*/
+/* Contact form styles */
+.contact-form{
+    width: calc(600 / 1240 * 100%);
+}
 
+.contact-form__group{
+    margin-bottom: 20px;
+}
+
+.contact-form__group--small{
+    width: 220px;    
+}
+
+.contact-form__group--captcha-text{
+    width: 305px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-form__group-captcha-span{
+    width: 88px;
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #000;
+}
+
+.contact-form__input,
+.contact-form__textarea,
+.contact-form__file-input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgba(40, 81, 147, 0.3);
+    background-color: rgba(241, 241, 241, 0.2);
+    border-radius: 5px;
+}
+
+.contact-form__file-input{
+    display: flex;
+    align-items: center;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus{
+    border-color: #00b3c0c4;
+    box-shadow: none;
+}
+
+.contact-form__textarea{
+    min-height: 307px;
+    resize: vertical;
+}
+
+/* ---------------------------------------------------- */
+.custom-file-upload {
+    border: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    margin-right: 25px;
+}
+input[type="file"] {
+    display: none;
+}
+
+.contact-form__file-input{
+    color: #888;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+
+::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
 
 
 /*---------------------------------------------*/
@@ -1273,6 +1360,12 @@ img{
         max-width: 800px;
         text-align: center;
         margin-right: 0;
+    }
+
+    /* contact form styles */
+    .contact-form{
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
 
