@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- site shortcut icon -->
+    <link rel="shortcut icon" href="./img/top-img1.jpg">
+    <!-- style links -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- title -->
+    <title>Times Uzbekistan - news website </title>
+</head>
+<body class="page-body">
+    <!-- Header section -->
+    <header class="site-header">
+        <div class="container">
+            <!-- Site header top -->
+            <div class="site-header__top">
+                <a class="logo" href="./index.html">Times Uzbekistan</a>
+                <ul class="exchange-rates">
+                    <li class="exchange-rates__item">
+                        <b class="exchange-rates__icon">$</b>
+                        <span class="exchange-rates__value">10950.25</span>
+                    </li>
+                    <li class="exchange-rates__item">
+                        <b class="exchange-rates__icon">P</b>
+                        <span class="exchange-rates__value">124.00</span>
+                    </li>
+                    <li class="exchange-rates__item">
+                        <b class="exchange-rates__icon">€</b>
+                        <span class="exchange-rates__value">11968.17</span>
+                    </li>
+                </ul>
+                <div class="site-header__actions">
+                    <button class="search-button" type="button">
+                        <span class="search-button__wrapper">
+                            <img class="search-button__img" src="./img/search-icon.svg" alt="search icon" width="24" height="24">
+                        </span>
+                    </button>
+            
+                    <button class="language-toggler" type="button">
+                        <span class="language-toggler__wrapper">
+                            <img class="language-toggler__img" src="./img/icon-russia-flag.svg" alt="search icon" width="24" height="24">
+                            <span class="language-toggler__text">Ru</span>
+                        </span>
+                    </button>
+                    
+                    <a class="telegram-sub" href="#" target="_blank">
+                        <img class="telegram-sub__img" src="./img/icon-telegram.svg" alt="messenger icon" width="20" height="20">
+                        <span class="telegram-sub__text">Subscribe</span>
+                    </a>
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div> 
+            </div> <!-- /site-header-top-->
+            <!-- Site navigation section -->
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Uzbekistan</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="https://www.bbc.com/news/world" target="_blank">World</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./list.html">Politics</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Economy</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./article.html">Society</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Technology</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Sports</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Culture</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Incidents</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Tourism</a></li>
+                </ul>
+            </nav>
+            <!-- Top banner -->
+            <aside class="top-banner">
+                <a href="#" class="top-banner__link">
+                    <img src="img/nrg-banner.jpg" srcset="img/nrg-banner.jpg 1x, img/nrg-banner@2x.jpg 2x" alt="nrg banner" width="1200" height="99">
+                </a>
+            </aside>
+        </div> <!-- /container-->
+    </header>
+    
+    <!-- Main content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="main-content__page-title">Write to us</h1>
+            <!-- Contact form -->
+            <div class="contact-form">
+                <form class="contact-form__form">
+                    <div class="contact-form__group"> 
+                        <input class="contact-form__input" aria-label="Name" type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="contact-form__group"> 
+                        <input class="contact-form__input" aria-label="Email" type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="contact-form__group"> 
+                        <input class="contact-form__input" aria-label="Phone number" type="number" name="number" placeholder="Phone number" required>
+                    </div>
+                    <div class="contact-form__group"> 
+                        <input class="contact-form__input" aria-label="Topic" type="text" name="topic" placeholder="Topic" required>
+                    </div>
+                    <div class="contact-form__group"> 
+                        <textarea class="contact-form__textarea"  aria-label="Text" name="textarea" placeholder="Text" required></textarea>
+                    </div>
+                    <div class="contact-form__group contact-form__group--small">
+                        <label class="contact-form__file-input">
+                            <label class="custom-file-upload">
+                                <input type="file"/>
+                                Attach file
+                            </label>
+                            <div class="contact-form__file-img"><img class="custom-file__upload-img" src="./img/attach-file-icon.svg" alt=""></div>
+
+                            <!-- <input class="visually-hidden contact-form__file-icon" type="file">
+                            <span class="contact-form__file-input__label">
+                                Attach file
+                                <img class="contact-form__file-icon" src="./img/attach-file-icon.svg" alt="File icon">
+                            </span> -->
+                        </label>
+                      </div>
+                    <div class="contact-form__group contact-form__group--small contact-form__group--captcha-text">
+                        <input class="contact-form__input" type="text" aria-label="code" name="captcha" placeholder="Code" required>
+                        <span class="contact-form__group-captcha-span">4k7Za</span>
+                        <!-- <span><img class="contact-form__captcha-img" src="./img/captcha-img.jpg" alt="code text img"></span> -->
+                    </div>
+                    <div class="contact-form__group contact-form__group--small">
+                        <button class="button button--block">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer section -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- site footer top -->
+            <div class="site-footer__top">
+                <a class="site-footer__logo" href="#" width="173" height="21">Times Uzbekistan</a>
+                <div class="site-footer__top-right">    
+                    <p class="site-footer__sub-text1">Join our Telegram channel:</p>
+                    <p class="site-footer__sub-text">Subscribe to our Telegram channel and stay up to date with the latest news:</p>
+                    <a class="telegram-footer" href="#" target="_blank">
+                        <img class="telegram-footer__img" src="./img/icon-telegram-footer.svg" alt="messenger icon" width="20" height="20">
+                        <span class="telegram-footer__text">Subscribe</span>
+                    </a>
+                </div>
+            </div>
+            <hr class="site-footer__divider">
+            <!-- site footer bottom -->
+            <div class="site-footer__bottom">
+                <section class="site-footer__about">
+                    <h2 class="site-footer__heading">About the site ↓</h2>
+                    <p class="site-footer__text">Reproduction, copying, replication, distribution and other use of information from the site "TIMES UZBEKISTAN" is possible only with the prior written permission of the editors.</p>
+                </section>
+                <ul class="site-footer__nav">
+                    <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">The site Information</a></li>
+                    <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Write to us</a></li>
+                    <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Advertising</a></li>
+                    <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Send news</a></li>
+                    <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Use of materials</a></li>
+                    <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Topics of the day</a></li>
+                    <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Our team</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
