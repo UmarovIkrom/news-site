@@ -1431,6 +1431,10 @@ input[type="file"] {
         width: 100%;
         margin-bottom: 30px;
     }
+        
+    .googleplay{
+        margin-right: 3px;
+    }
 }
 
 @media(max-width: 850px){
