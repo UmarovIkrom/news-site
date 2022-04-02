@@ -61,14 +61,14 @@
                 <ul class="site-nav__list">
                     <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Uzbekistan</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="https://www.bbc.com/news/world" target="_blank">World</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link" href="./list.html">Politics</a></li>
+                    <li class="site-nav__item site-nav__item--active"><a class="site-nav__link" href="./list.html">Politics</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Economy</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link" href="./article.html">Society</a></li>
+                    <li class="site-nav__item site-nav__item--active"><a class="site-nav__link" href="./article.html">Society</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Technology</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Sports</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Culture</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Incidents</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Tourism</a></li>
+                    <li class="site-nav__item site-nav__item--active"><a class="site-nav__link" href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
             <!-- Top banner -->
@@ -84,52 +84,101 @@
     <main class="main-content">
         <div class="container">
             <h1 class="main-content__page-title">Write to us</h1>
-            <!-- Contact form -->
-            <div class="contact-form">
-                <form class="contact-form__form">
-                    <div class="contact-form__group"> 
-                        <input class="contact-form__input" aria-label="Name" type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="contact-form__group"> 
-                        <input class="contact-form__input" aria-label="Email" type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="contact-form__group"> 
-                        <input class="contact-form__input" aria-label="Phone number" type="number" name="number" placeholder="Phone number" required>
-                    </div>
-                    <div class="contact-form__group"> 
-                        <input class="contact-form__input" aria-label="Topic" type="text" name="topic" placeholder="Topic" required>
-                    </div>
-                    <div class="contact-form__group"> 
-                        <textarea class="contact-form__textarea"  aria-label="Text" name="textarea" placeholder="Text" required></textarea>
-                    </div>
-                    <div class="contact-form__group contact-form__group--small">
-                        <label class="contact-form__file-input">
-                            <label class="custom-file-upload">
-                                <input type="file"/>
-                                Attach file
+            <div class="form-info-wrapper">
+                <!-- Contact form -->
+                <div class="contact-form">
+                    <form class="contact-form__form">
+                        <div class="contact-form__group">
+                            <input class="contact-form__input" aria-label="Name" type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="contact-form__group">
+                            <input class="contact-form__input" aria-label="Email" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="contact-form__group">
+                            <input class="contact-form__input" aria-label="Phone number" type="number" name="number" placeholder="Phone number" required>
+                        </div>
+                        <div class="contact-form__group">
+                            <input class="contact-form__input" aria-label="Topic" type="text" name="topic" placeholder="Topic" required>
+                        </div>
+                        <div class="contact-form__group">
+                            <textarea class="contact-form__textarea"  aria-label="Text" name="textarea" placeholder="Text" required></textarea>
+                        </div>
+                        <div class="contact-form__group contact-form__group--small">
+                            <label class="contact-form__file-input">
+                                <label class="custom-file-upload">
+                                    <input type="file"/>
+                                    Attach file
+                                </label>
+                                <div class="contact-form__file-img"><img class="custom-file__upload-img" src="./img/attach-file-icon.svg" alt=""></div>
+                                <!-- <input class="visually-hidden contact-form__file-icon" type="file">
+                                <span class="contact-form__file-input__label">
+                                    Attach file
+                                    <img class="contact-form__file-icon" src="./img/attach-file-icon.svg" alt="File icon">
+                                </span> -->
                             </label>
-                            <div class="contact-form__file-img"><img class="custom-file__upload-img" src="./img/attach-file-icon.svg" alt=""></div>
+                        </div>
+                        <div class="contact-form__group contact-form__group--small contact-form__group--captcha-text">
+                            <input class="contact-form__input" type="text" aria-label="code" name="captcha" placeholder="Code" required>
+                            <span class="contact-form__group-captcha-span">4k7Za</span>
+                            <!-- <span><img class="contact-form__captcha-img" src="./img/captcha-img.jpg" alt="code text img"></span> -->
+                        </div>
+                        <div class="contact-form__group contact-form__group--small">
+                            <button class="button button--block">Send</button>
+                        </div>
+                    </form>
+                </div>
 
-                            <!-- <input class="visually-hidden contact-form__file-icon" type="file">
-                            <span class="contact-form__file-input__label">
-                                Attach file
-                                <img class="contact-form__file-icon" src="./img/attach-file-icon.svg" alt="File icon">
-                            </span> -->
-                        </label>
-                      </div>
-                    <div class="contact-form__group contact-form__group--small contact-form__group--captcha-text">
-                        <input class="contact-form__input" type="text" aria-label="code" name="captcha" placeholder="Code" required>
-                        <span class="contact-form__group-captcha-span">4k7Za</span>
-                        <!-- <span><img class="contact-form__captcha-img" src="./img/captcha-img.jpg" alt="code text img"></span> -->
+                <!-- Contact info -->
+                <div class="contact-info">
+                    <div class="contact-info__logo">
+                        <a class="logo" href="./index.html">Times Uzbekistan</a>
                     </div>
-                    <div class="contact-form__group contact-form__group--small">
-                        <button class="button button--block">Send</button>
+                    <div class="contact-info__group">
+                        <p class="contact-info__heading">Email:</p>
+                        <p class="contact-info__heading-value">uztimes@gmail.com</p>
                     </div>
-                </form>
-            </div>
-        </div>
-    </main>
-
+                    <div class="contact-info__group">
+                        <p class="contact-info__heading">Social networks:</p>
+                        <ul class="contact-info__socials">
+                            <li class="contact-info__socials-item">
+                                <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjqxd-8hvX2AhVH6bIKHbaOAIsYABAAGgJscg&ae=2&sig=AOD64_0OJdm5FbOJAbji2gObETSzJrKbyw&q&adurl&ved=2ahUKEwjeg9m8hvX2AhVYAxAIHYJ3A_4Q0Qx6BAgDEAE" class="contact-info__socials-link">
+                                    <img class="contact-info__socials-img"src="./img/facebook-icon.svg" alt="social network" width="32" height="32">
+                                </a>
+                            </li>
+                            <li class="contact-info__socials-item">
+                                <a href="https://twitter.com/?lang=en" class="contact-info__socials-link">
+                                    <img class="contact-info__socials-img" src="./img/twitter-icon.svg" alt="social network" width="32" height="32">
+                                </a>
+                            </li>
+                            <li class="contact-info__socials-item">
+                                <a href="https://twitter.com/?lang=en" class="contact-info__socials-link">
+                                    <img class="contact-info__socials-img" src="./img/odno-icon.svg" alt="social network" width="32" height="32">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-info__group">
+                        <p class="contact-info__heading">Telegram channel:</p>
+                        <a class="telegram-contact" href="#" target="_blank">
+                            <img class="telegram-sub__img" src="./img/icon-telegram.svg" alt="messenger icon" width="20" height="20">
+                            <span class="telegram-sub__text">Subscribe</span>
+                        </a>
+                    </div>
+                    <div class="contact-info__group">
+                        <p class="contact-info__heading">Mobile app:</p>
+                        <div class="contact-store__links">
+                            <a href="https://play.google.com/store/apps" class="googleplay" target="_blank">
+                                <img class="" src="./img/contact-googleplay.jpg" alt="link to store" width="109" height="33">
+                            </a>
+                            <a href="https://apps.apple.com/us/app/google/id284815942?platform=ipad" class="" target="_blank">
+                                <img class="appstore" src="./img/contact-appstore.jpg" alt="link to store" width="109" height="33">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /form info wrapper -->
+        </div><!-- /container -->
+    </main> 
 
     <!-- Footer section -->
     <footer class="site-footer">
